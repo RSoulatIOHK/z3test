@@ -15,7 +15,7 @@ TESTS = Path(__file__).resolve().parent
 CORE = [
     'test_ff_combination.py', 'test_ff_large_combination.py', 'test_ff_euf.py', 'test_ff_native_proof.py', 'test_ff_native_check.py',
     'test_ff_root_clauses.py', 'test_ff_simplify.py',
-    'test_ff_bit_propagation.py', 'test_ff_basis_cache.py',
+    'test_ff_bit_propagation.py', 'test_ff_basis_cache.py', 'test_ff_unique.py',
     'test_ff_backend_recovery.py', 'test_qfff.py', 'test_ff_integration.py',
     'test_ff_general_algebra.py', 'test_ff_matrix.py', 'test_ff_basis_storage.py',
     'test_ff_reduction.py', 'test_ff_sparse_reducers.py', 'test_ff_round6.py',
