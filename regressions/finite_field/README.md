@@ -24,8 +24,8 @@ cmake --build build --target z3 test-z3 test-ff-api libz3 build_z3_python_bindin
 python3 "$FF_TESTS"/run_tests.py --build build --suite core --out /tmp/ff-core
 ```
 
-The core selection runs **20 Python suites**, seven native groups (`finite_field`, `ff_solver`,
-`ast`, `smt_context`, `smt2print_parse`, `api`, `arith_rewriter`), and the public
+The combined core selection runs **21 Python suites**, nine native groups (`finite_field`, `ff_solver`,
+`ff_euf`, `sat_smt_proof_scope`, `ast`, `smt_context`, `smt2print_parse`, `api`, `arith_rewriter`), and the public
 C++ API smoke test. The smoke target keeps assertions enabled in Release builds.
 Coverage includes exhaustive small-field oracles, SAT models and UNSAT cores,
 generic equality rewriting, global/local options, mixed theories, translated
