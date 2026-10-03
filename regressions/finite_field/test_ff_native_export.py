@@ -39,6 +39,8 @@ def check_whole_proofs(args):
     for prime in [101, 2**127 - 1]:
         f = f'(_ FiniteField {prime})'; zero = f'#f0m{prime}'; one = f'#f1m{prime}'
         declarations = ''.join(f'(declare-const {x} {f})' for x in ['x', 'y', 'z', 'w', 'u', 'v'])
+        cases.append(declarations + '(declare-const flag Bool)' +
+                     f'(assert (not (=> (= x (ite flag {one} {zero})) (= (= {one} x) flag))))')
         # Nested assertions and repeated arithmetic exercise input flattening
         # and printer-independent AST identity in the native trace.
         cases.append(declarations + f'(assert (and (and (= x z) (= y w)) '
