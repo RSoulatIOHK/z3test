@@ -47,6 +47,19 @@ def check_whole_proofs(args):
         for term, boolean in [(product, '(and a b)'), (xor, '(xor a b)'), (mux, '(ite c a b)')]:
             cases.append('(declare-const a Bool)(declare-const b Bool)(declare-const c Bool)' +
                          f'(assert (not (= {term} (ite {boolean} {o} {z}))))')
+    for prime in [2, 101]:
+        f, z, o = f'(_ FiniteField {prime})', f'#f0m{prime}', f'#f1m{prime}'
+        cases.append('(declare-const a Bool)(declare-const b Bool)' +
+                     f'(declare-const x {f})(declare-const y {f})' +
+                     '(assert (= (ff.mul x x) x))(assert (= (ff.mul y y) y))' +
+                     f'(assert (= x (ite a {o} {z})))(assert (= y (ite b {o} {z})))' +
+                     f'(assert (not (= (ff.mul x y) (ite (and a b) {o} {z}))))')
+    # A shared residual-sum proof must be hoisted outside consumer anchors;
+    # copying it under each Boolean assignment would unfold its native DAG.
+    bits = [f'b{i}' for i in range(8)]
+    values = ' '.join(f'(ite {b} #f1m101 #f0m101)' for b in bits)
+    cases.append(''.join(f'(declare-const {b} Bool)' for b in bits) +
+                 f'(assert (= (ff.add {values}) #f0m101))(assert (or {" ".join(bits)}))')
     for prime in [101, 2**127 - 1]:
         f = f'(_ FiniteField {prime})'; zero = f'#f0m{prime}'; one = f'#f1m{prime}'
         declarations = ''.join(f'(declare-const {x} {f})' for x in ['x', 'y', 'z', 'w', 'u', 'v'])
