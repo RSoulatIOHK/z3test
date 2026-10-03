@@ -1,0 +1,134 @@
+{
+  "routing-screen": {
+    "baseline": {
+      "fmcad390": {
+        "solved": 390,
+        "total": 390,
+        "lost_inputs": [],
+        "gained_inputs": [],
+        "answer_changes": [],
+        "common_geomean_time_ratio": 1.0
+      },
+      "balanced190": {
+        "solved": 169,
+        "total": 190,
+        "lost_inputs": [],
+        "gained_inputs": [],
+        "answer_changes": [],
+        "common_geomean_time_ratio": 1.0
+      }
+    },
+    "unique-native": {
+      "fmcad390": {
+        "solved": 390,
+        "total": 390,
+        "lost_inputs": [],
+        "gained_inputs": [],
+        "answer_changes": [],
+        "common_geomean_time_ratio": 0.8694340434819421
+      },
+      "balanced190": {
+        "solved": 163,
+        "total": 190,
+        "lost_inputs": [
+          "a131251649cb58763aff7484029a14fedfa129201c582ce39bab4ba93487f133",
+          "e73f01d1367b1557099cd1c84a470c321c149dc1f7895d1bbca7023a3e391e87",
+          "87edaccbe73ad2c3c69830038337bc3bc131484e2cfef33dfd1f7dc86d17de29",
+          "53d4b7a7deefa9c37b631ca0dc022bece79cb68e967433ab8b61db1f01b5a75b",
+          "bd4dd90352a25f56d9ac2bbbc8c318daa84cb6654bf21abec7c2611a86b43de1",
+          "d85102823f47f7791a451b6e8335d1e9a81bca8cd9913189f6e3686f7c6c905f"
+        ],
+        "gained_inputs": [],
+        "answer_changes": [],
+        "common_geomean_time_ratio": 1.153642654493231
+      }
+    },
+    "native": {
+      "fmcad390": {
+        "solved": 381,
+        "total": 390,
+        "lost_inputs": [
+          "7ec9370a0bf6ab0718fbeb8559f1c5ad7fd89bc9a8d52153c7e93c57ffe57411",
+          "e9e36d2f7b8f9310b30d1c6be76710e76a7345f55dfb5a259a34ba056deba7fd",
+          "2165991afc7c7df294f75417ee4b623a1578abee77b55c7bbe91ba2480a6436b",
+          "ca28e1fb01c7df2a476a920fbf0ff47b65ef017a80cebd7c9953047f536b8f1c",
+          "fc46a1aaca5686f59150d758a03e679d94a2b5de4d45d28747254d4644c230a6",
+          "bb09268b992a5b42c78b7e3f1b4dc74e00100add2464103afcab18c4f39019a8",
+          "acfffbb6a8e34a817fe0c9d3497faeefb10fe9eb46186a640c8611ae8de06fe4",
+          "2eef2049695ca81f62cc412e3760b8a2afa6326e29ade15711c856571dfbe713",
+          "74fb7a45714d35e3705df5cdf41063b320c003ddc361c02b88c87bdf1bac1d93"
+        ],
+        "gained_inputs": [],
+        "answer_changes": [],
+        "common_geomean_time_ratio": 0.8878770902769995
+      },
+      "balanced190": {
+        "solved": 162,
+        "total": 190,
+        "lost_inputs": [
+          "bd4dd90352a25f56d9ac2bbbc8c318daa84cb6654bf21abec7c2611a86b43de1",
+          "d85102823f47f7791a451b6e8335d1e9a81bca8cd9913189f6e3686f7c6c905f",
+          "e73f01d1367b1557099cd1c84a470c321c149dc1f7895d1bbca7023a3e391e87",
+          "74fb7a45714d35e3705df5cdf41063b320c003ddc361c02b88c87bdf1bac1d93",
+          "a131251649cb58763aff7484029a14fedfa129201c582ce39bab4ba93487f133",
+          "87edaccbe73ad2c3c69830038337bc3bc131484e2cfef33dfd1f7dc86d17de29",
+          "53d4b7a7deefa9c37b631ca0dc022bece79cb68e967433ab8b61db1f01b5a75b"
+        ],
+        "gained_inputs": [],
+        "answer_changes": [],
+        "common_geomean_time_ratio": 1.1055470539421481
+      }
+    }
+  },
+  "consolidation": {
+    "baseline": {
+      "fmcad390": {
+        "solved": 390,
+        "total": 390,
+        "lost_inputs": [],
+        "gained_inputs": [],
+        "answer_changes": [],
+        "common_geomean_time_ratio": 1.0
+      },
+      "balanced190": {
+        "solved": 169,
+        "total": 190,
+        "lost_inputs": [],
+        "gained_inputs": [],
+        "answer_changes": [],
+        "common_geomean_time_ratio": 1.0
+      }
+    },
+    "consolidated": {
+      "fmcad390": {
+        "solved": 390,
+        "total": 390,
+        "lost_inputs": [],
+        "gained_inputs": [],
+        "answer_changes": [],
+        "common_geomean_time_ratio": 1.014017740014254
+      },
+      "balanced190": {
+        "solved": 169,
+        "total": 190,
+        "lost_inputs": [],
+        "gained_inputs": [],
+        "answer_changes": [],
+        "common_geomean_time_ratio": 0.9984859260972195
+      }
+    }
+  },
+  "acceptance": {
+    "existing_groups_passed": 41,
+    "existing_groups_total": 41,
+    "direct_uniqueness_cases_passed": 132,
+    "test_commit": "37a7dce",
+    "ordinary_extraction": "polynomial algorithm is byte-for-byte identical to its previous tactic-local implementation; changed translation units passed syntax checks",
+    "integration": "combined stack rebuilt and acceptance-tested",
+    "sat_model_audits": {
+      "passed": 160,
+      "total": 160,
+      "per_configuration": 80
+    }
+  }
+}

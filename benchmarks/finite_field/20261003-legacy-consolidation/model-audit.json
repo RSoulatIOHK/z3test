@@ -1,0 +1,1448 @@
+{
+  "parameter": "model_validate=true",
+  "timeout_seconds": 12,
+  "cases": [
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "50a91996e895fa3247f79cad9c98c5ad560c5a2a60d64d44ad1a308b0889801c",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "430b07eb0d756f21c8a6b6501919db0da16176572e253b3c034d50517b8d0cb8",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "36f9d083670dc3757ca4b1ccad8b089726c4118426f06f265ec7ca57ab07af94",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "fb5b5b0a67920751f26f8e8a682a69bba0c559efe8a1ca11dcc0dc8586d776dc",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "adf0f47e62d4f0bed3b64013afdd5b6075668443c11c8634580b7b6e0efd3796",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "d0ce054e76fcb9c13cf38ce776d126ee6fcf7e725ac8642049d9f194bf0f25d4",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "230c494a17677ddd73ee67f983bfbfc0c80d7d569d10936083ea47e3c4a2da89",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "3f4c84c7ae18a5043528f038dd4f616cf50c353b1495d548cbfc7ba6aaad3733",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "d15d878a8e357b13a0e884f396721a124b84ef8ebac2d6c1b04e4d313f5b90c8",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "53eb6c2ba9659b68e03e619bbde3b8f73651d8f18e76ede40f0e6cb760b9936f",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "9302ee23ab2881bd71457b546916b1b6f7ffcb4e4270fa5328f0525bc22b0971",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "6c61aea33f2121d4353ecd64b62f67aa61b79755a224608f5954665bf68753a5",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "cec79fda34a67688ae0c818dc1369dad41419255fe67111f2817db7c79965b8c",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "ce53b0db0d87458340c93556aee9f83b35a7179039bb721be5d466b2e94c7e2c",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "d4758234d5dbefab78e6690535a9c5cb9165bdc9a926933490993535a9cc40fe",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "50867f79efc076825bc417c742d29b2a2352570884b2e84284da455432de9cbd",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "b9b69b1f43657f271308a9be9e81a2f24b38ba7a706e289a24ec8a29576957de",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "e73f01d1367b1557099cd1c84a470c321c149dc1f7895d1bbca7023a3e391e87",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "8457e3102c034280ff39be3b19b9e4c605fc21006f62d66ecadb5b06aa6f7b4b",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "94f547ed926c90b3ec8e82b2a9fc6f0f2793e23b9d9d99fa2b073f0ae18390ce",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "e7d55a4c2017fcd137116c0c828f08e2801edafe17c2ec1491862da61194d771",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "4b5cef4ee3263df0af72febb16ccc821c6068defc8a3f911651e939ba92891f5",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "d5185b3e72463b14119d0077dcdbe66bc90114ae46fe8ff9d1af14beab229b16",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "9302ee23ab2881bd71457b546916b1b6f7ffcb4e4270fa5328f0525bc22b0971",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "d0003a04b7d1c7563c1ef9fc5e9740b52d8ff0501c4bd4069fe6955f25fd52b2",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "3f4c84c7ae18a5043528f038dd4f616cf50c353b1495d548cbfc7ba6aaad3733",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "e9fdf3b16b8fc4e8474b9fc66501e3b1fb8c8586b352d22e2151f112d1b4935d",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "2aae94e801d2809f4da400474d2d66a7f5bc9f233d3b273ff2afdacb00df1f51",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "d7eeb3c46b0d12ff1948c0acb65c3de1b6f678e9bb234ef83258b683f2b9c2e3",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "dcf358f87bcc82edb866c5ba2e2a317640748c2c046b7b56f5f6dd9d91b5e0dc",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "8e11d72e7f4f5659eee032bc8b754e3247574df6d911d4be477da48f4c106566",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "59a9aaa1778207ffc787f8b6ed212f06da04c17b44b8e8c77f0eb04df09bd745",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "2aae94e801d2809f4da400474d2d66a7f5bc9f233d3b273ff2afdacb00df1f51",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "00991f2d60bc59df93075ec2888a9eaee466285a7a511e7d0625466406023104",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "9871576aa95520cd0ec2c5bc44042223cc4a2415ae92f28f0d78037790d68282",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "6c61aea33f2121d4353ecd64b62f67aa61b79755a224608f5954665bf68753a5",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "91b56796f2606732704b3515f28105f65bb872aff3230e2eb0c27309a4b78033",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "264198a26ded63951e2f50c01345f43833848ce0c5cd8c5c1056bbf60b9ae268",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "36f9d083670dc3757ca4b1ccad8b089726c4118426f06f265ec7ca57ab07af94",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "8a8ab54628f77be67e21cd8cd8762b2b1a4a7e731d33efd3465ef9982ab29a18",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "e7d55a4c2017fcd137116c0c828f08e2801edafe17c2ec1491862da61194d771",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "00991f2d60bc59df93075ec2888a9eaee466285a7a511e7d0625466406023104",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "509a714c94c1fc2ae4354e0ed570bc56fe044a90474c47cb9de4ae2696f9357f",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "ce53b0db0d87458340c93556aee9f83b35a7179039bb721be5d466b2e94c7e2c",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "32381082e772789e05f67542c45153570986ce67f37f2862c01f89eb500688fd",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "2d43d2a2348165669186fcab3a946c8dcaca93c4d88444d3513074cc9b8e2d5b",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "d1f837070ad1f3300c88cc68ef774478c44f517deacfe45cb4d80cba1035afd6",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "37e2560259482bc0b5d28ac5cb69ff8161b29648ddc8c46f5b569084f72267fb",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "1cced6f60710a14c802387b43fee4ee70c8f1a6e9b99f68d6d23956c3963a43e",
+      "status": "ok",
+      "answers": [
+        "sat",
+        "unsat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "e7f999ef82c22e22313e84f665a7585c198042e3104df5b992223c8a4ef1f970",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "493bbd1b0b746b4d418d38658574d8807ae73c2204e641634d6a7f9adf49edd2",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "f98a5e270c7ef87f76e3d1f0bbb494dc48321ed78a475f2c85f6714c346583e9",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "9fed9b8cea89ed20e2932f5f9e53fc7abcffb4a4164ac19a6dfee9895463e72a",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "430b07eb0d756f21c8a6b6501919db0da16176572e253b3c034d50517b8d0cb8",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "d4758234d5dbefab78e6690535a9c5cb9165bdc9a926933490993535a9cc40fe",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "3da1ea711b4134c4674e9920778471d0e32f8ab31d5369afccb1610b90328fee",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "53eb6c2ba9659b68e03e619bbde3b8f73651d8f18e76ede40f0e6cb760b9936f",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "597ad18cee9533bcb6f463c4817e859437d8d8a16f9744fad26baafcbb803d59",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "e73f01d1367b1557099cd1c84a470c321c149dc1f7895d1bbca7023a3e391e87",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "ef02cbc985b4242d19d438d9d9dd77b8d250a37b8143d612914cdbc61e77dc54",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "3da1ea711b4134c4674e9920778471d0e32f8ab31d5369afccb1610b90328fee",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "37e2560259482bc0b5d28ac5cb69ff8161b29648ddc8c46f5b569084f72267fb",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "d0003a04b7d1c7563c1ef9fc5e9740b52d8ff0501c4bd4069fe6955f25fd52b2",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "d0ce054e76fcb9c13cf38ce776d126ee6fcf7e725ac8642049d9f194bf0f25d4",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "3e7b05c17e3405dc09e4e4b394b57e1ae3c7d83298463f805e6e836c04fb97a0",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "c5f70d3114cc9e6219628e411a99bf03c573ec4258d49389f93004a1b30a8b25",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "9c945bafaca6ef6a69057948ec5047f7ea309e8af8ee6eb84cf6f977703c5818",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "ec06c055d77d1036ba87ca7469176268feafd0ba82aa3aea0d83e84cabe28e82",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "74caf807a996145333883e6c6e56ad4b790d2a46c6f5a3183ca5c57c9b0a834d",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "c5f70d3114cc9e6219628e411a99bf03c573ec4258d49389f93004a1b30a8b25",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "c89a2339ace99e2177a98ccc5a7f1459152c43416d3f2e1d4180619f26c99fe8",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "1ac51f762d5e2345ddbaa2af528202f0c33b30e86bde88e2f8fc08cc39df1763",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "cec79fda34a67688ae0c818dc1369dad41419255fe67111f2817db7c79965b8c",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "0437d2cb05da80cd42efc2a957f18ddd56d8c1ba0ffeaea97bf75dff1f914d15",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "68db019d9983269ddc58549f1267a6d86ae5552adf9a8b229cf76c19ba809996",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "a6eb5e7d177ea2c62b25649f97e2a1565682f02e3eaf0904d021b31c80715e7a",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "b733f7a0ab14c9ac39187c7630c90769e48a15a04156512b8e97f37aaf113a1d",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "fb5b5b0a67920751f26f8e8a682a69bba0c559efe8a1ca11dcc0dc8586d776dc",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "a53cdebadd445df03fad5ad70b99fec14ea3085a436c9b71f7b359d80973967a",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "8a8ab54628f77be67e21cd8cd8762b2b1a4a7e731d33efd3465ef9982ab29a18",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "e7f999ef82c22e22313e84f665a7585c198042e3104df5b992223c8a4ef1f970",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "2667da8d2f9af4281bcbfdb6af58f2ba2a90978d87479f8c7213d8519192afe9",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "50a91996e895fa3247f79cad9c98c5ad560c5a2a60d64d44ad1a308b0889801c",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "3651db50ab7410c1b290376a2642cbf7a271c644cc3f68ca431e97378a60c257",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "d1f837070ad1f3300c88cc68ef774478c44f517deacfe45cb4d80cba1035afd6",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "fd198a93fd4c002b01c7f8930bc84b3a5e570053ede8ec6aa1b11e02a41b1ab0",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "2667da8d2f9af4281bcbfdb6af58f2ba2a90978d87479f8c7213d8519192afe9",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "a6eb5e7d177ea2c62b25649f97e2a1565682f02e3eaf0904d021b31c80715e7a",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "d8a13ba14509f5319be9b3f2b6f74257f680f88c8c0c73bc95c21e418e5661b5",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "ec06c055d77d1036ba87ca7469176268feafd0ba82aa3aea0d83e84cabe28e82",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "7f14e7ec2c8c302cfeebca4585e3bb96330f0d62586cc7fbeb66ccebda352080",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "c5a8e485363532bb7aa00b1bc6aaf9a5729c80ebe34d67cb42f1cd2af1e0a385",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "f98a5e270c7ef87f76e3d1f0bbb494dc48321ed78a475f2c85f6714c346583e9",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "72dd6f456946bfac202c4c4cfc1067649e75ad3bb79596d2c474de8d8185b5b6",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "91b56796f2606732704b3515f28105f65bb872aff3230e2eb0c27309a4b78033",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "d5185b3e72463b14119d0077dcdbe66bc90114ae46fe8ff9d1af14beab229b16",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "68db019d9983269ddc58549f1267a6d86ae5552adf9a8b229cf76c19ba809996",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "d15d878a8e357b13a0e884f396721a124b84ef8ebac2d6c1b04e4d313f5b90c8",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "4c60b15f69e13a53ea1c37fab149a56dfe56ea3b22dbd76ed53afda326bd94fd",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "d7eeb3c46b0d12ff1948c0acb65c3de1b6f678e9bb234ef83258b683f2b9c2e3",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "230c494a17677ddd73ee67f983bfbfc0c80d7d569d10936083ea47e3c4a2da89",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "dcf358f87bcc82edb866c5ba2e2a317640748c2c046b7b56f5f6dd9d91b5e0dc",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "4b5cef4ee3263df0af72febb16ccc821c6068defc8a3f911651e939ba92891f5",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "597ad18cee9533bcb6f463c4817e859437d8d8a16f9744fad26baafcbb803d59",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "e5bdfefd74c3624f66ac2b685e48815954f260527d24bec8a1cd2da5d4bdc1af",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "0437d2cb05da80cd42efc2a957f18ddd56d8c1ba0ffeaea97bf75dff1f914d15",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "bfcca08dff675410bd31b764a492c3a3b402f4c3e2d4f69ad23f891dc61e1be0",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "1cced6f60710a14c802387b43fee4ee70c8f1a6e9b99f68d6d23956c3963a43e",
+      "status": "ok",
+      "answers": [
+        "sat",
+        "unsat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "509a714c94c1fc2ae4354e0ed570bc56fe044a90474c47cb9de4ae2696f9357f",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "4c60b15f69e13a53ea1c37fab149a56dfe56ea3b22dbd76ed53afda326bd94fd",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "cd1aae5e9f202c8cdaaba42d9ab9b178b37f8543c423366e8585dedb16385d28",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "720b41eb3d2aeaa0e112aedc588f2e9e4f216e470135453b0c2ae0abd4240de0",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "fd12e3088f18f1acc523c391557ee295a2a573e495add370436431df8c0ac4ec",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "adf0f47e62d4f0bed3b64013afdd5b6075668443c11c8634580b7b6e0efd3796",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "50867f79efc076825bc417c742d29b2a2352570884b2e84284da455432de9cbd",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "3651db50ab7410c1b290376a2642cbf7a271c644cc3f68ca431e97378a60c257",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "c5a8e485363532bb7aa00b1bc6aaf9a5729c80ebe34d67cb42f1cd2af1e0a385",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "43d904de627e82b87fe48475b0dda56de02d5250a25c565ec2e7e2c7d88ac9f2",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "b733f7a0ab14c9ac39187c7630c90769e48a15a04156512b8e97f37aaf113a1d",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "3a181cd0e29ccf64fa4234d49e7fbb03eaa059556d03f28f273ceb7a5eafa169",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "72dd6f456946bfac202c4c4cfc1067649e75ad3bb79596d2c474de8d8185b5b6",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "3e7b05c17e3405dc09e4e4b394b57e1ae3c7d83298463f805e6e836c04fb97a0",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "74caf807a996145333883e6c6e56ad4b790d2a46c6f5a3183ca5c57c9b0a834d",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "493bbd1b0b746b4d418d38658574d8807ae73c2204e641634d6a7f9adf49edd2",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "3a181cd0e29ccf64fa4234d49e7fbb03eaa059556d03f28f273ceb7a5eafa169",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "9c945bafaca6ef6a69057948ec5047f7ea309e8af8ee6eb84cf6f977703c5818",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "cd1aae5e9f202c8cdaaba42d9ab9b178b37f8543c423366e8585dedb16385d28",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "b9b69b1f43657f271308a9be9e81a2f24b38ba7a706e289a24ec8a29576957de",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "732c3c5c506c7ab92ba464aae3160b9dc4dbb9e9de820bacc2a3a5cf25ef4a4d",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "e5bdfefd74c3624f66ac2b685e48815954f260527d24bec8a1cd2da5d4bdc1af",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "fd198a93fd4c002b01c7f8930bc84b3a5e570053ede8ec6aa1b11e02a41b1ab0",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "8e11d72e7f4f5659eee032bc8b754e3247574df6d911d4be477da48f4c106566",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "94f547ed926c90b3ec8e82b2a9fc6f0f2793e23b9d9d99fa2b073f0ae18390ce",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "720b41eb3d2aeaa0e112aedc588f2e9e4f216e470135453b0c2ae0abd4240de0",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "7f14e7ec2c8c302cfeebca4585e3bb96330f0d62586cc7fbeb66ccebda352080",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "6900790d363d26d3fca799cea57091b1e1a5e8f02eca3ef4c020576e4001ab47",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "11753e0e8a4c0b5bce0c2bbd584610ce631047fa1414e062cd598d307bee8e57",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "c89a2339ace99e2177a98ccc5a7f1459152c43416d3f2e1d4180619f26c99fe8",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "32381082e772789e05f67542c45153570986ce67f37f2862c01f89eb500688fd",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "1ac51f762d5e2345ddbaa2af528202f0c33b30e86bde88e2f8fc08cc39df1763",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "a53cdebadd445df03fad5ad70b99fec14ea3085a436c9b71f7b359d80973967a",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "43d904de627e82b87fe48475b0dda56de02d5250a25c565ec2e7e2c7d88ac9f2",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "2d43d2a2348165669186fcab3a946c8dcaca93c4d88444d3513074cc9b8e2d5b",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "732c3c5c506c7ab92ba464aae3160b9dc4dbb9e9de820bacc2a3a5cf25ef4a4d",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "9871576aa95520cd0ec2c5bc44042223cc4a2415ae92f28f0d78037790d68282",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "909b9bfe34365b337467d4ece2593c84342f916e226c57ac233ae7d7644a9633",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "11753e0e8a4c0b5bce0c2bbd584610ce631047fa1414e062cd598d307bee8e57",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "fd12e3088f18f1acc523c391557ee295a2a573e495add370436431df8c0ac4ec",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "e9fdf3b16b8fc4e8474b9fc66501e3b1fb8c8586b352d22e2151f112d1b4935d",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "42473e4fadac6a5671b234f720529edc9a9b000c05a1514f3454c664ee33a822",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "59a9aaa1778207ffc787f8b6ed212f06da04c17b44b8e8c77f0eb04df09bd745",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "ef02cbc985b4242d19d438d9d9dd77b8d250a37b8143d612914cdbc61e77dc54",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "264198a26ded63951e2f50c01345f43833848ce0c5cd8c5c1056bbf60b9ae268",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "8457e3102c034280ff39be3b19b9e4c605fc21006f62d66ecadb5b06aa6f7b4b",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "9fed9b8cea89ed20e2932f5f9e53fc7abcffb4a4164ac19a6dfee9895463e72a",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "909b9bfe34365b337467d4ece2593c84342f916e226c57ac233ae7d7644a9633",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "42473e4fadac6a5671b234f720529edc9a9b000c05a1514f3454c664ee33a822",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "consolidated",
+      "corpus": "balanced190",
+      "input_id": "6900790d363d26d3fca799cea57091b1e1a5e8f02eca3ef4c020576e4001ab47",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "bfcca08dff675410bd31b764a492c3a3b402f4c3e2d4f69ad23f891dc61e1be0",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    },
+    {
+      "config": "baseline",
+      "corpus": "balanced190",
+      "input_id": "d8a13ba14509f5319be9b3f2b6f74257f680f88c8c0c73bc95c21e418e5661b5",
+      "status": "ok",
+      "answers": [
+        "sat"
+      ]
+    }
+  ]
+}

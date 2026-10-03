@@ -1,0 +1,95 @@
+diff --git a/src/tactic/portfolio/default_tactic.cpp b/src/tactic/portfolio/default_tactic.cpp
+index 1765b8068..6c2c699e7 100644
+--- a/src/tactic/portfolio/default_tactic.cpp
++++ b/src/tactic/portfolio/default_tactic.cpp
+@@ -18,12 +18,11 @@ Notes:
+ 
+ --*/
+ #include "tactic/portfolio/default_tactic.h"
++#include "tactic/arith/ff2bv_tactic.h"
+ #include "tactic/tactical.h"
+ #include "tactic/probe.h"
+ #include "ast/for_each_expr.h"
+ #include "ast/ff_decl_plugin.h"
+-#include "tactic/arith/ff_solve_tactic.h"
+-#include "tactic/arith/ff2bv_tactic.h"
+ #include "tactic/core/simplify_tactic.h"
+ #include "tactic/smtlogics/qfbv_tactic.h"
+ #include "tactic/smtlogics/qflia_tactic.h"
+@@ -60,9 +59,6 @@ tactic * mk_default_tactic(ast_manager & m, params_ref const & p) {
+                                         //cond(mk_is_qfufnra_probe(), mk_qfufnra_tactic(m, p),
+                                              and_then(mk_preamble_tactic(m), mk_lazy_tactic(m, p, [&](auto& m, auto const& p) { return mk_smt_tactic(m, p);}))))))))))))))),
+                                p);
+-    // Preserve native equality/Boolean reasoning on residual field goals;
+-    // the field theory itself supplies exact BV fallback when needed.
+-    if (m.proofs_enabled())
+-        return cond(mk_has_ff_probe(), and_then(mk_ff_simplify_tactic(m, p), mk_ff_smt_tactic(m, p)), st);
+-    return cond(mk_has_ff_probe(), and_then(mk_ff_unique_tactic(m, p), mk_ff_simplify_tactic(m, p), or_else(mk_ff_solve_tactic(m, p), mk_ff_sat_tactic(m, p), mk_ff_smt_tactic(m, p))), st);
++    return cond(mk_has_ff_probe(), mk_ff_tactic(m, p), st);
++
+ }
+diff --git a/src/tactic/portfolio/ff_tactic.cpp b/src/tactic/portfolio/ff_tactic.cpp
+index 58912435f..e3813a7a5 100644
+--- a/src/tactic/portfolio/ff_tactic.cpp
++++ b/src/tactic/portfolio/ff_tactic.cpp
+@@ -16,6 +16,7 @@ Author:
+ 
+ --*/
+ #include "tactic/portfolio/ff_tactic.h"
++#include "tactic/arith/ff_solve_tactic.h"
+ #include "tactic/probe.h"
+ #include "tactic/tactical.h"
+ #include "tactic/smtlogics/smt_tactic.h"
+@@ -60,3 +61,11 @@ bool has_ff_terms(ast_manager &m, expr *e) {
+     for_each_expr(visit, e);
+     return found;
+ }
++
++// One strategy for both explicit QF_FF and field terms in unrestricted goals.
++tactic *mk_ff_tactic(ast_manager &m, params_ref const &p) {
++    if (m.proofs_enabled())
++        return and_then(mk_ff_simplify_tactic(m, p), mk_ff_smt_tactic(m, p));
++    return annotate_tactic("ff-tactic",
++        and_then(mk_ff_unique_tactic(m, p), mk_ff_simplify_tactic(m, p), mk_ff_smt_tactic(m, p)));
++}
+diff --git a/src/tactic/portfolio/ff_tactic.h b/src/tactic/portfolio/ff_tactic.h
+index b43da6b6d..c2678eedf 100644
+--- a/src/tactic/portfolio/ff_tactic.h
++++ b/src/tactic/portfolio/ff_tactic.h
+@@ -19,6 +19,7 @@ Author:
+ #include "util/params.h"
+ class ast_manager;
+ class tactic;
++tactic *mk_ff_tactic(ast_manager &m, params_ref const &p);
+ tactic *mk_ff_smt_tactic(ast_manager &m, params_ref const &p);
+ 
+ class expr;
+diff --git a/src/tactic/portfolio/smt_strategic_solver.cpp b/src/tactic/portfolio/smt_strategic_solver.cpp
+index 2d402208f..33db30644 100644
+--- a/src/tactic/portfolio/smt_strategic_solver.cpp
++++ b/src/tactic/portfolio/smt_strategic_solver.cpp
+@@ -39,7 +39,6 @@ Notes:
+ #include "tactic/smtlogics/nra_tactic.h"
+ #include "tactic/portfolio/default_tactic.h"
+ #include "solver/smt_logics.h"
+-#include "tactic/arith/ff_solve_tactic.h"
+ #include "tactic/smtlogics/smt_tactic.h"
+ #include "tactic/fd_solver/fd_solver.h"
+ #include "tactic/fd_solver/smtfd_solver.h"
+@@ -73,16 +72,6 @@ public:
+ 
+ 
+ 
+-static tactic *mk_ff_tactic(ast_manager &m, params_ref const &p) {
+-    // Let native SMT reasoning handle residual field goals before its exact
+-    // BV fallback, preserving shared equalities and lazy Boolean choices.
+-    if (m.proofs_enabled())
+-        return and_then(mk_ff_simplify_tactic(m, p), mk_ff_smt_tactic(m, p));
+-    return annotate_tactic("ff-tactic",
+-                            and_then(mk_ff_unique_tactic(m, p), mk_ff_simplify_tactic(m, p),
+-                                     or_else(mk_ff_solve_tactic(m, p), mk_ff_sat_tactic(m, p), mk_ff_smt_tactic(m, p))));
+-}
+-
+ tactic * mk_tactic_for_logic(ast_manager & m, params_ref const & p, symbol const & logic) {
+     if (smt_logics::logic_is_ff(logic))
+         return mk_ff_tactic(m, p);

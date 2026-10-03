@@ -1,0 +1,36 @@
+{
+  "sources": {
+    "CAV23": "https://zenodo.org/records/7865471",
+    "CAV24": "https://zenodo.org/records/10917330",
+    "FMCAD26": "https://zenodo.org/records/20133205"
+  },
+  "scope": "ordinary solving on the combined stack; no certificate-production benchmark",
+  "ordinary_cleanup_commit": "b1ce6cac3",
+  "combined_cleanup_commit": "422da0a6a",
+  "baseline_binary_source_commit": "bbdf662e8312b3fffec18b097c776300ee2b2743",
+  "experiment_base_commit": "4ba2669f3",
+  "conditions": {
+    "timeout_seconds": 10,
+    "workers": 4,
+    "rss_mib": 4096,
+    "repetitions": 1,
+    "timing": "process wall time; configurations interleaved with a fixed shuffle"
+  },
+  "runs": {
+    "routing-screen": {
+      "binary_sha256": {
+        "baseline": "8efd9326518b38788ac24a37796bffa5bd5dda13001cf52d51a48b14184c8a61",
+        "unique-native": "29da1cabfd0e21a59f6cbd520c3ed433e81744a02ff9d2d29980c52c8b6ac9fc",
+        "native": "29da1cabfd0e21a59f6cbd520c3ed433e81744a02ff9d2d29980c52c8b6ac9fc"
+      },
+      "rows": 1740
+    },
+    "consolidation": {
+      "binary_sha256": {
+        "baseline": "8efd9326518b38788ac24a37796bffa5bd5dda13001cf52d51a48b14184c8a61",
+        "consolidated": "8578f3c73e4b821b0b81b01ae33e883ffd035e6684a9e8c53bc699d0ec06efb0"
+      },
+      "rows": 1160
+    }
+  }
+}
