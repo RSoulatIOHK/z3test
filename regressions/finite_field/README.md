@@ -24,8 +24,8 @@ cmake --build build --target z3 test-z3 test-ff-api libz3 build_z3_python_bindin
 python3 "$FF_TESTS"/run_tests.py --build build --suite core --out /tmp/ff-core
 ```
 
-The combined core selection runs **21 Python suites**, nine native groups (`finite_field`, `ff_solver`,
-`ff_euf`, `sat_smt_proof_scope`, `ast`, `smt_context`, `smt2print_parse`, `api`, `arith_rewriter`), and the public
+The combined core selection runs **23 Python suites**, twelve native groups (`finite_field`, `ff_solver`,
+`ff_euf`, `ff_native_proof`, `smt_proof_checker`, `smt_proof_weakening`, `sat_smt_proof_scope`, `ast`, `smt_context`, `smt2print_parse`, `api`, `arith_rewriter`), and the public
 C++ API smoke test. The smoke target keeps assertions enabled in Release builds.
 Coverage includes exhaustive small-field oracles, SAT models and UNSAT cores,
 generic equality rewriting, global/local options, mixed theories, translated
@@ -55,7 +55,9 @@ Use `--suite all` to combine core and proof selections.
 
 Every invocation requires a new output directory and writes per-suite logs plus
 `summary.json`, including commands, statuses, timings and the selected build.
-Failures, missing prerequisites and timeouts return a nonzero exit code.
+Failures, missing prerequisites and timeouts return a nonzero exit code. Native
+tests additionally require their named completion record; `exit(0)` before
+completion cannot pass.
 `--jobs` defaults to two and `--timeout` to 300 seconds per suite; timeout stops
 the suite's process group, including child solver processes. The CI workflow
 runs both selections on Ubuntu Release builds for pull requests and saves the
@@ -84,4 +86,21 @@ Its header records the source revision and file hashes. `zk_circuits.py` and
 dependency. `POSEIDON-LICENSE-MIT` retains the upstream license for this fixture.
 
 
-Combined-stack validation also runs `ff_euf`, `sat_smt_proof_scope`, and `test_ff_euf.py`. These exercise the SAT/EUF consumer and online checking across user scopes. Native callbacks independently replay field DAGs after pop. The outer checker still uses SMT fallback for some scoped clause transformations; this is not complete proof-chain validation. Sequence tests stay on the legacy SMT adapter.
+The proof integration selection runs native proof composition and strict SAT/EUF
+checking across user scopes, including deletion callbacks. Field DAGs are
+replayed after pop and after the producing solver is destroyed; rejected FF
+evidence cannot fall back to another SMT solve. Default proof-mode API tests
+cover arrays, sequences, datatypes, UF and multiple fields. Native field solving
+also runs against exhaustive small-field models with recording enabled.
+
+Four proof suites include an external export/check of actual native FF leaves,
+bound back to their native premises, alongside the existing reconstructed export
+profiles. Altered files, altered native DAGs, removed premises and misleading
+checker output must be rejected. These field-lemma exports do not establish an
+Alethe export of the entire native SMT proof.
+
+The `ff-check-native-proof` CLI profile additionally checks pure ground QF_FF
+proofs against current input assertions, discharges rewrite obligations and
+rejects unsupported rules, theories and external assumptions. This uses Z3's
+native checker and rewriter, rather than an independent whole-proof checker. Other theories retain Z3's existing proof-checking behavior, and SAT/EUF
+still has no sequence plugin; sequence tests use the default legacy SMT adapter.
