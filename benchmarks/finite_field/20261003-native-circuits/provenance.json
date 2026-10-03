@@ -1,0 +1,154 @@
+{
+  "native_before": {
+    "source_commit": "21d67fa2c8d93796df4e34bb4156058aed3e19ba",
+    "binary_sha256": "8e5b633f5ca57056a2825be8017e302c80ff46329d427d50d0f170090e4e5f27",
+    "timeout_seconds": 10,
+    "workers": 4,
+    "rss_mib": 4096,
+    "timing": "whole solve plus native proof checking, process wall time",
+    "profile": "input-bound ground QF_FF native proof checker; not independent whole-proof Alethe checking"
+  },
+  "native_after": {
+    "source_commit": "bbdf662e8312b3fffec18b097c776300ee2b2743",
+    "binary_sha256": "8efd9326518b38788ac24a37796bffa5bd5dda13001cf52d51a48b14184c8a61",
+    "timeout_seconds": 10,
+    "workers": 4,
+    "rss_mib": 4096,
+    "timing": "whole solve plus native proof checking, process wall time",
+    "profile": "input-bound ground QF_FF native proof checker; not independent whole-proof Alethe checking"
+  },
+  "external_after": {
+    "source_commit": "bbdf662e8312b3fffec18b097c776300ee2b2743",
+    "timeout_seconds": 10,
+    "workers": 4,
+    "rss_mib": 4096,
+    "timing": "whole process including Python startup, native solving, export, binding/replay and external checks; compression between waves is outside timers",
+    "z3_sha256": "8efd9326518b38788ac24a37796bffa5bd5dda13001cf52d51a48b14184c8a61",
+    "libz3_sha256": "8f6c2977f1cd48a37d1f9cd15db8783d08004d627c15fcff3e695d76c762fa4e",
+    "exporter_sha256": "562552f7d633479b1482dc90a21df1404b671eddde62ead6ae0c994347b7e213",
+    "cleanup": "tracked process tree plus exact output-path sweep, including independently detached checker groups",
+    "script_sha256": {
+      "ff_boolean_proof.py": "c675a55c22931884bdcd126f90f2977e95128751ce12cf10c62999c7fb03d8a3",
+      "ff_proof_pipeline.py": "249d42d6904bd73db7b8b0e20bbb9cef3db8628de097b3201b05d23bef6b1a3d",
+      "ff_certificate.py": "7a860898d5f3a98c54729e79fa80f55d6d1614acd98f4fc2092ae36dc48a0168",
+      "ff_native_evidence.py": "09d57c6e3b036f48be09f49fefa8e9fd8c4fc97f66e96dc17a0cdf7c7d2f1a46",
+      "ff_native_alethe.py": "562552f7d633479b1482dc90a21df1404b671eddde62ead6ae0c994347b7e213"
+    }
+  },
+  "native_standalone_before": {
+    "source_commit": "b5bdc4a1c32f92389c95ab7aaec1219a00dbb445",
+    "source_diff_sha256": "73d81991cb2caef2c3f9c7df652e9c81aa1d29ae0d3dbeddc0a13112fa186358",
+    "binary_sha256": "58c60b8bcb87ade34ddc480117fd9d8dcfa681fb40472cb9443853b89eba3e7e",
+    "timeout_seconds": 10,
+    "workers": 4,
+    "rss_mib": 4096,
+    "timing": "whole solve plus native proof checking, process wall time",
+    "profile": "input-bound ground QF_FF native proof checker; not independent whole-proof Alethe checking"
+  },
+  "native_standalone_after": {
+    "source_commit": "623a8645757821fb25307ce43e6724202c4b9311",
+    "binary_sha256": "162c37af00d38092f747b0ab85b526a850d6c6216964b61708640edbec6d71e9",
+    "timeout_seconds": 10,
+    "workers": 4,
+    "rss_mib": 4096,
+    "timing": "whole solve plus native proof checking, process wall time",
+    "profile": "input-bound ground QF_FF native proof checker; not independent whole-proof Alethe checking"
+  },
+  "public_corpus": "https://zenodo.org/records/20133205",
+  "native_summary": {
+    "before": 315,
+    "after": 371,
+    "gains": 56,
+    "losses": 0,
+    "unknown": 9,
+    "timeouts": 10,
+    "rejected_completed_proofs": 0
+  },
+  "native_standalone_summary": {
+    "before": 307,
+    "after": 369,
+    "gains": 62,
+    "losses": 0,
+    "unknown": 10,
+    "timeouts": 11,
+    "rejected_completed_proofs": 0
+  },
+  "external_summary": {
+    "total": 390,
+    "checked": 301,
+    "statuses": {
+      "done": 317,
+      "timeout": 73
+    },
+    "errors": {
+      "": 57,
+      "native Alethe proof not checked: external stage timeout": 16,
+      "native Alethe proof not checked: checker work limit": 3,
+      "native Alethe proof not checked: native solver did not produce UNSAT": 9,
+      "native Alethe proof not checked: token limit": 3,
+      "native Alethe proof not checked: Alethe output size limit": 1
+    }
+  },
+  "ordinary_summary": {
+    "fmcad390": {
+      "baseline": 390,
+      "candidate": 390,
+      "gains": [],
+      "losses": [],
+      "answer_disagreements": [],
+      "common_geomean_time_ratio": 1.0511094383884927
+    },
+    "balanced190": {
+      "baseline": 169,
+      "candidate": 169,
+      "gains": [],
+      "losses": [],
+      "answer_disagreements": [],
+      "common_geomean_time_ratio": 1.0099883179947458
+    }
+  },
+  "ordinary_conditions": {
+    "timeout": 10,
+    "workers": 4,
+    "rss_mib": 4096,
+    "timing": "solver process wall time, polling every 10ms",
+    "memory": "single native solver process RSS",
+    "binaries": {
+      "baseline": "8e5b633f5ca57056a2825be8017e302c80ff46329d427d50d0f170090e4e5f27",
+      "candidate": "8efd9326518b38788ac24a37796bffa5bd5dda13001cf52d51a48b14184c8a61"
+    }
+  },
+  "ordinary_input_note": "input_id is the original public input identifier; input_sha256 hashes the actual solver input after the existing syntax adapter.",
+  "model_audit": {
+    "baseline": 80,
+    "candidate": 80
+  },
+  "checkers": {
+    "carcara": "b3108a328ada1133bf7480540779032581a3a16be2b283715bdded4125816105",
+    "ffpacheck": "8a7e9a31d9287a0b9266395b6c3b819da8545a2241b540e77451af33cc1948be"
+  },
+  "host": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "certificate_python": "3.14.2"
+  },
+  "acceptance": {
+    "standalone": {
+      "source_commit": "623a86457",
+      "groups_passed": 41
+    },
+    "combined": {
+      "source_commit": "bbdf662e8",
+      "groups_passed": 41
+    },
+    "whole_external_regression_cases": 32,
+    "test_source_commit": "8a9de930a11eba1d727afedd0085f5e14e9e5e92"
+  },
+  "scope": "Native replay uses Z3 proof checking. External results require original-input binding, independent polynomial replay, and Carcara/Pacheck completion. Lean is not included. Historical PR2 377/390 used a different reconstruction pipeline and is not interchangeable with native replay.",
+  "methodology": "Native and external comparisons are separate runs. Ordinary baseline/candidate runs were paired in randomized order. External timing includes interpreter startup and process teardown; failed checker process trees, including detached groups, are stopped before the next wave. Output archives are created and hash-verified only between timed waves. Superseded external runs with incomplete child cleanup are excluded.",
+  "data_sha256": {
+    "ordinary-results.jsonl": "bec5d715f675d0d2ebb75b9008bc25c05fa8026f51d6df90be46afa559cbd8df",
+    "proof-results.jsonl": "e43b963c183d750196772f6630911bb4fe04a447ebc2f29ee9700ba55327bd1e"
+  },
+  "model_audit_method": "model_validate=true, 12 seconds per input, with the completed answer sequence required to match the paired run."
+}
