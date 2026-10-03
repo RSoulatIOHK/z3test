@@ -82,3 +82,6 @@ vectors for BN254 and BLS12-381 from the Poseidon implementation in
 Its header records the source revision and file hashes. `zk_circuits.py` and
 `test_zk.py` use this data to test circuit semantics; it is not a solver runtime
 dependency. `POSEIDON-LICENSE-MIT` retains the upstream license for this fixture.
+
+
+Combined-stack validation also runs `ff_euf`, `sat_smt_proof_scope`, and `test_ff_euf.py`. These exercise the SAT/EUF consumer and online checking across user scopes. Native callbacks independently replay field DAGs after pop. The outer checker still uses SMT fallback for some scoped clause transformations; this is not complete proof-chain validation. Sequence tests stay on the legacy SMT adapter.
