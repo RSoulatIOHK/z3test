@@ -30,9 +30,8 @@ def main():
     assert model.eval(x).as_long()==2 and model.eval(y).as_long()==5
     proof_context=Context(proof=True);pf=FiniteFieldSort(7,proof_context);a=FiniteFieldElems('a',pf)[0]
     pg=Goal(proofs=True,ctx=proof_context);pg.add(a*a==3)
-    try: Tactic('ff-simplify',ctx=proof_context)(pg)
-    except Z3Exception as e: assert 'certificates' in str(e)
-    else: raise AssertionError('proof-producing preprocessing accepted')
+    proof_result=Tactic('ff-simplify',ctx=proof_context)(pg)
+    assert len(proof_result)==1 and proof_result[0].as_expr().eq(pg.as_expr())
     checked=0;rng=random.Random(4469)
     for prime in [2,3,5,7,17]:
         f=FiniteFieldSort(prime);x,y=FiniteFieldElems('x y',f)
@@ -45,7 +44,7 @@ def main():
                 value=simplify(substitute(reduced,(x,FiniteFieldVal(a,f)),(y,FiniteFieldVal(b,f))))
                 assert is_true(value)==bool(oracle(a,b)) and (is_true(value) or is_false(value)),(prime,text,reduced,a,b,value)
                 checked+=1
-    print(f'Symbolic identities, constant propagation, reconstructed models, proof rejection and {checked} exhaustive rewrite evaluations passed')
+    print(f'Symbolic identities, constant propagation, reconstructed models, proof-mode preprocessing and {checked} exhaustive rewrite evaluations passed')
 
 
 if __name__=='__main__':main()

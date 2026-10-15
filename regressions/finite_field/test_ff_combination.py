@@ -168,16 +168,14 @@ def lifecycle():
             assert s.check() == unsat
             s.pop()
             assert s.check() == sat
-    # Certificates remain explicitly unsupported, including the new raw path.
+    # The ordinary proof-producing solver must retain a field refutation.
     ctx = Context(proof=True)
     F = FiniteFieldSort(7, ctx)
     x = FiniteFieldElem('proof_x', F)
     s = SimpleSolver(ctx=ctx)
     s.add(x*x == 3)
-    try:
-        assert s.check() == unknown
-    except Z3Exception as ex:
-        assert 'certificates are not supported' in str(ex), ex
+    assert s.check() == unsat
+    assert is_false(s.proof().children()[-1])
 
 
 def exhaustive_uf(factory):
@@ -230,4 +228,4 @@ if __name__ == '__main__':
         conditional_model(factory)
         print(name + ': mixed theories, models, finite domains, incrementality, cores and 105 exhaustive UF queries passed', flush=True)
     lifecycle()
-    print('Late field introduction, reset and proof rejection passed', flush=True)
+    print('Late field introduction, reset and proof production passed', flush=True)
